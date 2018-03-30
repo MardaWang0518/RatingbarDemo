@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mardawang.android.ratingbardemo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统默认样式:"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <RatingBar
+        android:id="@+id/rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:numStars="7"
+        android:rating="3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大风格Ratingbar，使用系统Style："
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <RatingBar
+        android:id="@+id/rb2"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:numStars="7"
+        android:rating="3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义样式Ratingbar："
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+
+    <RatingBar
+        android:id="@+id/rb3"
+        style="@style/mine_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重写Ratingbar："
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <com.mardawang.android.ratingbardemo.MineRatingBar
+        android:id="@+id/rb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:starPadding="10dp"
+        app:starImageSize="20dp"
+        app:starCount="5"
+        app:starEmpty="@drawable/icon_ratingbar_off"
+        app:starFill="@drawable/icon_ratingbar_on"/>
+
+</LinearLayout>
