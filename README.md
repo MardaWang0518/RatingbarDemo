@@ -14,6 +14,7 @@ RatingBar是基于SeekBar（拖动条）和ProgressBar（状态条）的扩展�
 
 下面是效果图，
 ![](001.png)
+![](004.png)
 
 下面是部分核心代码
 
