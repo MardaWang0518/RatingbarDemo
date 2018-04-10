@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener,RatingBar.OnRatin
         }
     }
 
-    override fun onRatingChanged(p0: RatingBar?, p1: Float, p2: Boolean) {
-        showToast(p1.toString())
+    override fun onRatingChanged(p0: RatingBar?, ratingCount: Float, p2: Boolean) {
+        showToast(ratingCount.toString())
     }
 
     override fun onRatingChange(ratingCount: Float) {
@@ -37,8 +37,8 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener,RatingBar.OnRatin
 
     }
 
-    override fun onClick(p0: View?) {
-        when(p0?.id){
+    override fun onClick(v: View?) {
+        when(v?.id){
             R.id.tv_comment -> showDialog()
             }
     }
