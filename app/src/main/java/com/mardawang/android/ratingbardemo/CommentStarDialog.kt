@@ -40,7 +40,7 @@ class CommentStarDialog : Dialog, View.OnClickListener,MineRatingBar.OnRatingCha
 
     protected constructor(context: Context, cancelable: Boolean, cancelListener: DialogInterface.OnCancelListener?) : super(context, cancelable, cancelListener) {}
 
-    override fun onCreate(savedInstanceState: Bundle) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.dialog_comment_ratingbar)
         initView()
