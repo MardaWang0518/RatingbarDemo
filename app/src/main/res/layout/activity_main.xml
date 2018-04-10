@@ -5,21 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="20dp"
     tools:context="com.mardawang.android.ratingbardemo.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="系统默认样式:"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp"/>
+        android:textSize="18sp"/>
 
     <RatingBar
         android:id="@+id/rb1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:numStars="7"
+        android:numStars="6"
         android:rating="3"/>
 
     <TextView
@@ -51,7 +51,8 @@
         style="@style/mine_ratingbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -66,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         app:starPadding="10dp"
-        app:starImageSize="20dp"
+        app:starImageSize="28dp"
         app:starCount="5"
         app:starEmpty="@drawable/icon_ratingbar_off"
         app:starFill="@drawable/icon_ratingbar_on"/>

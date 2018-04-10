@@ -115,7 +115,7 @@ public class MineRatingBar extends LinearLayout {
     public MineRatingBar(Context context, AttributeSet attrs) {
         super(context, attrs);
         setOrientation(LinearLayout.HORIZONTAL);
-        TypedArray mTypedArray = context.obtainStyledAttributes(attrs, R.styleable.MineRatingBar);
+        TypedArray mTypedArray = context.obtainStyledAttributes(attrs, R.styleable.RatingBar);
         starImageSize = mTypedArray.getDimension(R.styleable.RatingBar_starImageSize, 20);
         starPadding = mTypedArray.getDimension(R.styleable.RatingBar_starPadding, 10);
         starStep = mTypedArray.getFloat(R.styleable.RatingBar_starStep, 1.0f);
