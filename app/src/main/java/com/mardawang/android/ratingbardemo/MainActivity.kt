@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() ,RatingBar.OnRatingBarChangeListener,Mi
         rb1.setOnRatingBarChangeListener(this)
         rb2.setOnRatingBarChangeListener(this)
         rb3.setOnRatingBarChangeListener(this)
-
         rb4.setOnRatingChangeListener(this)
 
     }
@@ -24,7 +23,6 @@ class MainActivity : AppCompatActivity() ,RatingBar.OnRatingBarChangeListener,Mi
     }
 
     override fun onRatingChange(ratingCount: Float) {
-        TODO("not implemented")
         Toast.makeText(this,ratingCount.toString(),Toast.LENGTH_SHORT).show()
     }
 }
