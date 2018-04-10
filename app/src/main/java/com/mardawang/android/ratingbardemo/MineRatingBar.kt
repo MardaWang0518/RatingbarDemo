@@ -42,7 +42,7 @@ class MineRatingBar
     /**
      * 每个星星的大小
      */
-    private var starImageSize: Float = 0.toFloat()
+    private var starImageSize: Float = 0f
     /**
      * 每个星星的间距
      */
@@ -50,7 +50,7 @@ class MineRatingBar
     /**
      * 星星的显示数量，支持小数点
      */
-    private var starStep: Float = 0.toFloat()
+    private var starStep: Float = 0f
     /**
      * 空白的默认星星图片
      */

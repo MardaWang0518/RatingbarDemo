@@ -74,4 +74,19 @@
         app:starEmpty="@drawable/icon_ratingbar_off"
         app:starFill="@drawable/icon_ratingbar_on"/>
 
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="评价"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_blue_corners"
+        android:padding="10dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        />
+
 </LinearLayout>
