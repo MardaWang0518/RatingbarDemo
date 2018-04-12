@@ -37,8 +37,8 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener,RatingBar.OnRatin
 
     }
 
-    override fun onClick(v: View?) {
-        when(v?.id){
+    override fun onClick(view: View?) {
+        when(view?.id){
             R.id.tv_comment -> showDialog()
             }
     }
